@@ -1,2 +1,2 @@
-# GftStart.4.2022
+# EtapaTecnica
 Desafios Etapa Técnica
