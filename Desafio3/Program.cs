@@ -41,8 +41,14 @@ namespace Desafio3
             var RendimentoCC = contaC.Rendimento(contaC.Saldo);
             var RendimentoCP = contaP.Rendimento(contaP.Saldo);
 
+            var impostoCC = contaC.CalcularImposto(RendimentoCC);
+            var impostoCP = contaP.CalcularImposto(RendimentoCP);
+
             System.Console.WriteLine("O rendimento mensal da conta corrente é R$: " + decimal.Round(RendimentoCC, 2, MidpointRounding.AwayFromZero));
-            System.Console.WriteLine("O rendimento mensal da cona poupança é R$: " + decimal.Round(RendimentoCP, 2, MidpointRounding.AwayFromZero));
+            System.Console.WriteLine("O rendimento mensal da conta poupança é R$: " + decimal.Round(RendimentoCP, 2, MidpointRounding.AwayFromZero));
+
+            System.Console.WriteLine("O importo da conta corrente é R$: " + decimal.Round(impostoCC, 2, MidpointRounding.AwayFromZero));
+            System.Console.WriteLine("O imposto conta poupança é R$: " + decimal.Round(impostoCP, 2, MidpointRounding.AwayFromZero));
         }
     }
 }
